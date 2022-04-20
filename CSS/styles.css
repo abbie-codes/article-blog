@@ -1,0 +1,189 @@
+@import "fonts.css";
+@import "layoutHomepage.css";
+@import "layoutBlog.css";
+@import "search.css";
+@import "subscribe.css";
+
+/* Main body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Bahnschrift";
+    font-weight: normal;
+}
+
+/* Header */
+.logo {
+    font-family: "miriam_librebold";
+    font-size: 2rem;
+    color: #f44336;
+    text-decoration: none;
+    margin: 2%;
+}
+
+input::placeholder {
+    font-family: "Bahnschrift";
+}
+
+/* Blog Posts on Homepage */
+.read-more,
+.posted {
+    font-size: 0.7em;
+    color: #444;
+}
+
+h2,
+.category {
+    font-family: "madamedium";
+    color: #f44336; 
+}
+
+h4 {
+    font-size: 2em;
+    margin: 0 0 1% 0;
+    font-weight: 400;
+}
+
+.blog-link,
+.blog-link:hover,
+.blog-link:active
+.blog-link:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+.blog-card {
+    border-top: 1px solid #bfbfbf;
+    border-top: 1px solid #bfbfbf;
+}
+
+.category:link,
+.category:visited,
+.category:active,
+.category:hover {
+    text-decoration: none;
+}
+
+.post-title:link,
+.post-title:visited,
+.post-title:hover,
+.post-title:active {
+    text-decoration: none;
+    color: #000;
+  }
+
+
+/* Footer */
+.footer-container,
+.footer-container2 {
+    background-color: #000;
+    color: #fff;
+}
+
+/*Blog Post Page Header */
+#header-title {
+    background-color: #161262;
+}
+
+.feature-title {
+    color: #fff;
+    text-shadow: 3px 3px black;
+    font-weight: 700;
+    font-size: 10vh;
+    margin: 20px 0px 20px 0px;
+}
+
+.author-name-date > p {
+    color: #fff;
+    font-size: 13px;
+}
+
+.author-name-date > a {
+    color: #f44336;
+    font-size: 13px;
+}
+
+/* Blog Post */
+article > p,
+article > ul > li {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.5em;
+    font-weight: 400;
+}
+
+article > p > a,
+li > a {
+    color: #1488cc;
+    text-decoration: none;
+}
+
+.list-head {
+    font-size: 1.7em;
+}
+
+figcaption {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1em;
+}
+
+li > figcaption {
+    font-size: 0.8em;
+}
+
+li > span {
+ font-weight: bold;
+}
+
+blockquote {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2em;
+    color:#444;
+}
+
+blockquote > a {
+    font-weight: 300;
+    font-style: italic;
+    text-decoration: none;
+    color:#bfbfbf;
+    font-size: 0.7em;
+}
+
+.subscribe-p {
+    color:#bfbfbf;
+    font-weight: 300;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Blog Post Sidebar */
+h5 {
+    color: #444;
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Blop Post Related Posts Section */
+.feature-author-container > span {
+    font: 2em;
+}
+
+.name {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1.5em;
+    margin: 1%;
+}
+
+.tag {
+    padding: 1%;
+    color:#f44336;
+    border: 1px solid #f44336;
+    width: 50%;
+    line-height: 3em;
+    margin-left: 1%;
+    text-decoration: none;
+}

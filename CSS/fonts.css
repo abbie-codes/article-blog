@@ -1,0 +1,27 @@
+@font-face {
+    font-family: "miriam_librebold";
+    src: url("/fonts/miriamlibre-bold-webfont.woff2") format("woff2"),
+         url("/fonts/miriamlibre-bold-webfont.woff") format("woff"),
+         url("/fonts/MiriamLibre-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "madamedium";
+    src: url("/fonts/mada-medium-webfont.woff2") format("woff2"),
+         url("/fonts/mada-medium-webfont.woff") format("woff"),
+         url("/fonts/Mada-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Bahnschrift";
+    src: url("Bahnschrift.woff2") format("woff2"),
+         url("Bahnschrift.woff") format("woff"),
+         url("/fonts/BAHNSCHRIFT.TTF") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

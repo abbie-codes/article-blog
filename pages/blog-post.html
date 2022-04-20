@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/./CSS/styles.css">
+    <script src="https://kit.fontawesome.com/6447c0f7e1.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Article | 5 tips for Responsive Web Design in 2022</title>
+</head>
+
+<body>
+    <div class="body-container-post">
+        <nav class="nav-container">
+            <div class="logo-title">
+                <a href="index.html" class="logo">&lt/article&gt</a>
+                <h1 class="blog-title">A Web Development Blog</h1>
+            </div>
+            <div class="search-bar">
+                <input type="text" class="searchTerm" placeholder="Search for a post">
+                <button type="submit" class="searchButton">
+                    <span class="fa fa-search"></span>
+                </button>
+            </div>
+            <div class="icons">
+                <a href="https://en-gb.facebook.com/login.php" target="_blank" class="icon">
+                    <img src="/./icons/facebook.png"></a>
+                <a href="https://twitter.com/" target="_blank" class="icon">
+                    <img src="/./icons/twitter.png"></a>
+                <a href="https://www.instagram.com/" target="_blank" class="icon">
+                    <img src="/./icons/instagram.png"></a>
+                <a href="https://uk.linkedin.com/" target="_blank" class="icon">
+                    <img src="/./icons/linkedin.png"></a>
+            </div>
+            <button class="subscribe-nav" onclick="window.location.href = 'blog-post.html#subscribe';">
+                SUBSCRIBE
+            </button>
+        </nav>
+
+        <header class="header-container">
+            <div class="column" id="header-title">
+                <div class="header-margin">
+                    <h3 class="category">DESIGN</h3>
+                    <h4 class="feature-title">5 tips for Responsive Web Design in 2022</h4>
+                    <div class="feature-author-date-container">
+                        <div class="author-image">
+                            <img src="/images/author-photo.png" width="100" height="100">
+                        </div>
+                        <div class="author-name-date">
+                            <a class="feature-author" href="link.html">BY ABIGAIL UNWIN</a>
+                            <p class="feature-date">April, 11, 2022</p>
+                            <p>5 mins to read</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="column" id="header-image">
+                <img src="/images/responsive-design2.jpeg" width="100%" height="100%">
+            </div>
+        </header>
+
+        <article>
+            <p>Gone are the days where websites were only accessed on computer screens. It is estimated that half of all
+                internet users in 2022 access the web from their mobile phones, and this number will likely increase,
+                <a href="https://www.warc.com/content/paywall/article/warc-datapoints/almost_three_quarters_of_internet_users_will_be_mobileonly_by_2025/124845"
+                    target="_blank">it
+                    is predicted that almost three quarters of internet users will be mobile-only by 2025</a>. Google
+                also favours mobile-responsive websites in their search algorithm, so it is essential that web designers
+                ensure that their site looks great and is functional on all screen sizes. This is where responsive web
+                design comes in.
+            </p>
+            <h4>What is responsive design?</h4>
+            <p>Responsive web design allows the code to respond to the size of the device’s screen.<br><br>
+                If you look at a static website on a mobile the text is small and ineligible, when you look at a
+                responsive site it has been coded so that the text is larger and easily readable. Images on a responsive
+                web page will be resized to fit onto a smaller screen so that the image can be viewed without scrolling
+                or zooming in. Navigation bars work well on static websites but menus can take up too much space on a
+                mobile sight, these are often replaced with menu icons in the top corner that are clickable with one
+                hand, referred to as hamburger menus because of their circular shape with 3 lines in the middle.<br><br>
+                Responsive design was created to give the user optimal viewing experience, whether you are looking at a
+                mobile phone, a tablet or a large monitor.
+            </p>
+            <figure>
+                <img src="/images/responsive-vs-static.png"
+                    alt="Illustration of a website on multiple devices built to respond to device size vs a static website on a laptop">
+                <figcaption>An example of responsive design vs static design</figcaption>
+            </figure>
+            <br>
+            <h4>
+                Here are 5 tips to get you started:
+            </h4>
+            <br><br>
+            <h4 class="list-head">1. Relative length units</h4>
+            <p>Make sure that the settings you use for length are responsive. Absolute units (like pixels) will not
+                allow your website to respond to different device sizes. Instead, use viewport-relative units (like vh
+                or vw) or font-relative units (em or rem). This will allow the elements to scale.</p>
+            <blockquote cite="https://uxdesign.cc/say-goodbye-to-pixels-cb720fbaf250">
+                "Absolutely no absolute units!"<br>
+                <a href="https://uxdesign.cc/say-goodbye-to-pixels-cb720fbaf250" target="_blank">- web designer Nick
+                    Gard</a>
+            </blockquote>
+
+            <h4 class="list-head">2. Think about layout first</h4>
+            <p>The layout of your site is important for functionality, user experience and look and feel of the page.
+                Incorporate flexible grids that adjust depending on screen size so that as the viewport narrows the
+                content is more vertical. This will allow your web page to change without sacrificing any content.
+                Setting minimum and maximum values for height and width properties can ensure elements are
+                controlled.<br>
+                <br>
+                Consider designing at least 3 layouts for different browser widths:
+            </p>
+            <ul>
+                <li><span>Small:</span> Under 600px. This is how the content will look on the majority of mobiles.</li>
+                <li><span>Medium:</span> 600px – 900px. This is how the content will look on most tablets, some large
+                    phones and
+                    small laptops.</li>
+                <li><span>Large:</span> Over 900px. This is how the content will look on most computers.</li>
+            </ul>
+
+            <h4 class="list-head">3. Use Media Queries</h4>
+            <p>So, you have visualised how you want your site to look on mobiles, tablets and computers, how do you make
+                sure your CSS can adapt to different screen sizes? This is where media queries come in.</p>
+            <figure>
+                <img src="/images/media-query.png" alt="Image of CSS code displaying media queries">
+                <figcaption>An example of media queries</figcaption>
+            </figure>
+            <p>The @media rule is used to set rules for different screen sizes. Media queries can be used to transform
+                many things such as width and height of device and orientation so you can have different site settings
+                for portrait or landscape mode. You can also use media queries to specify that certain styles are only
+                for printed documents or for screen readers (mediatype: print, screen, or speech).</p>
+
+            <h4 class="list-head">4. Typography</h4>
+            <p>Make sure that your font is legible across devices.
+                <a href="https://www.impactplus.com/blog/best-font-size-for-website#:~:text=Although%20there's%20no%20official%20ADA,font%20for%20the%20body%20text"
+                    target="_blank">
+                    Although there's no official minimum size font for website use, it's usually recommended that you
+                    use at least 16px font for the body text</a>, this is a good starting point for the body of your
+                page and then you can adjust headings accordingly.
+                Consider also adjusting the line height of your text so that the paragraph lines are not cramped on the
+                page.
+                Another tip is to use font that is easy to read, especially for the main body of text or menu options a
+                decorative font might be readable on a large screen but hard to read on a mobile device.
+            </p>
+
+            <h4 class="list-head">5. Test out your webpage</h4>
+            <p>You’ve implemented all of the above steps and think that your webpage will look great and work seamlessly
+                on screens of all sizes, but you aren’t sure how to test it out? Thankfully there are loads of great
+                resources out there on the web that let you test your work!<br>
+                <br>
+                Here are a few suggestions:
+            </p>
+            <ul>
+                <li>
+                    <a href="https://bluetree.ai/screenfly/" target="_blank">
+                        Screenfly</a>
+                    <br><br>
+                    Simply enter the web address, click the display mode you want to view and Screenfly will show you
+                    how the webpage will look!
+                </li>
+                <figure>
+                    <img src="/images/screenfly.png" alt="Image of screenfly webpage">
+                    <figcaption>Screenfly webpage</figcaption>
+                </figure>
+                <li>
+                    <a href="http://mobiletest.me/" target="_blank">
+                        MobileTest.me</a>
+                    <br><br>
+                    This site is specifically for viewing the webpage on different mobile devices. It works similarly to
+                    Screenfly, simply select the mobile device you want to use and type in the URL. As simple as that!
+                </li>
+                <figure>
+                    <img src="/images/mobile-test.png" alt="Image of MobileTest.me webpage">
+                    <figcaption>MobileTest.me webpage</figcaption>
+                </figure>
+                <li>
+                    <a href="https://search.google.com/test/mobile-friendly" target="_blank">
+                        Google Mobile-Friendly Test</a>
+                    <br><br>
+                    If you are still not sure if your site is mobile friendly Google have a helpful tool. You can give
+                    this webpage a URL or add your code and Google will tell you whether or not the site is mobile
+                    friendly. If not Google will let you know where you are going wrong and give suggestions on how to
+                    adapt the page.
+                </li>
+                <figure>
+                    <img src="/images/google-mobile-friendly.png" alt="Image of Google Mobile-Friendly Test webpage">
+                    <figcaption>Google Mobile-Friendly Test webpage</figcaption>
+                </figure>
+            </ul>
+
+            <p>You are now set to create a beautiful responsive website of your own. We hope you have enjoyed learning
+                these 5 tips and will implement them in your work. Happy Coding!</p>
+
+            <p class="subscribe-p">If you would like to receive our weekly newsletter and get articles like this
+                directly to your inbox
+                please subscribe to this blog.</p>
+        </article>
+        <section class="share-article">
+            <h5>Share this:</h5>
+            <a href="https://www.pinterest.co.uk/" target="_blank">
+                <img src="/icons/pinterest.png"></a>
+            <a href="https://www.facebook.com/" target="_blank">
+                <img src="/icons/facebook.png"></a>
+            <a href="https://www.twitter.com/" target="_blank">
+                <img src="/icons/twitter.png"></a>
+            <a href="https://uk.linkedin.com/" target="_blank">
+                <img src="/icons/linkedin.png"></a>
+            <a href="https://slack.com/intl/en-gb/" target="_blank">
+                <img src="/icons/slack.png"></a>
+            <a href="https://gmail.com" target="_blank">
+                <img src="/icons/email.png"></a>
+            <a href="https://www.messenger.com/" target="_blank">
+                <img src="/icons/messenger.png"></a>
+            <a href="https://www.whatsapp.com/" target="_blank">
+                <img src="/icons/whatsapp.png"></a>
+        </section>
+        <section class="related-posts">
+            <div class="column" id="author-tags">
+                <h2>AUTHOR</h2>
+                <div class="feature-author-container">
+                    <div class="author-image">
+                        <img src="/images/author-photo.png" width="100" height="100">
+                    </div>
+                    <p class="name">Abigail Unwin</p>
+                </div>
+                <br>
+                <h2>TAGS</h2>
+                <a href="/pages/link.html" target="_blank" class="tag"><span>Responsive Design</span></a>
+                <a href="/pages/link.html" target="_blank" class="tag"><span>UX Design</span></a>
+                <a href="/pages/link.html" target="_blank" class="tag"><span>UX/UI</span></a><br>
+                <a href="/pages/link.html" target="_blank" class="tag"><span>Web Design</span></a>
+                <a href="/pages/link.html" target="_blank" class="tag"><span>Mobile</span></a>
+                <a href="/pages/link.html" target="_blank" class="tag"><span>Web and Digital Design</span></a><br>
+                <a href="/pages/link.html" target="_blank" class="tag"><span>CSS</span></a>
+                <a href="/pages/link.html" target="_blank" class="tag"><span>Learn Design</span></a>
+                <a href="/pages/link.html" target="_blank" class="tag"><span>HTML</span></a><br>
+                <a href="/pages/link.html" target="_blank" class="tag"><span>Typography</span></a>
+                <a href="/pages/link.html" target="_blank" class="tag"><span>Media Queries</span></a>
+                <a href="/pages/link.html" target="_blank" class="tag"><span>Web Development</span></a>
+            </div>
+            <div class="column">
+                <h2>RELATED POSTS</h2>
+                <div class="blog-card-container">
+                    <div class="blog-card">
+                        <div class="card-left">
+                            <a href="/pages/link.html" target="_blank" class="category">
+                            <h3 class="category">CSS</h3></a>
+                            <a href="/pages/link.html" target="_blank" class="post-title">
+                            <h4 class="post-title">Choosing a colour palette to increase engagement</h4></a>
+                            <div class="posted">
+                                <a class="author" href="link.html" target="_blank">BY ALICE GRAHAM</a>
+                                <p class="date">March, 28, 2022 | 2 mins to read</p>
+                            </div>
+                        </div>
+                        <div class="card-right">
+                            <a href="/pages/link.html" target="_blank">
+                            <img class="blog-img" src="/images/colour-chart.jpeg"></a>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <div class="card-left">
+                            <a href="/pages/link.html" target="_blank" class="category">
+                            <h3 class="category">JS</h3></a>
+                            <a href="/pages/link.html" target="_blank" class="post-title">
+                            <h4 class="post-title">10 JavaScript libraries to increase productivity</h4></a>
+                            <div class="posted">
+                                <a class="author" href="link.html" target="_blank">BY JAMES PERRY</a>
+                                <p class="date">February, 21, 2022 | 10 mins to read</p>
+                            </div>
+                        </div>
+                        <div class="card-right">
+                            <a href="/pages/link.html" target="_blank">
+                            <img class="blog-img" src="/images/js-image.png"></a>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <div class="card-left">
+                            <a href="/pages/link.html" target="_blank" class="category">
+                            <h3 class="category">HTML</h3></a>
+                            <a href="/pages/link.html" target="_blank" class="post-title">
+                            <h4 class="post-title">Essential HTML tags to use for your blog</h4></a>
+                            <div class="posted">
+                                <a class="author" href="link.html" target="_blank">BY MADELINE FISHER</a>
+                                <p class="date">January, 10, 2022 | 5 mins to read</p>
+                            </div>
+                        </div>
+                        <div class="card-right">
+                            <a href="/pages/link.html" target="_blank">
+                            <img class="blog-img" src="/images/html-image.png"></a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <footer class="footer-container2">
+            <div class="white-icons">
+                <a href="https://en-gb.facebook.com/login.php" target="_blank" class="white-icon">
+                    <img src="/icons/facebook-white.png"></a>
+                <a href="https://twitter.com/" target="_blank" class="white-icon">
+                    <img src="/icons/twitter-white.png"></a>
+                <a href="https://www.instagram.com/" target="_blank" class="white-icon">
+                    <img src="/icons/instagram-white.png"></a>
+                <a href="https://uk.linkedin.com/" target="_blank" class="white-icon">
+                    <img src="/icons/linkedin-white.png"></a>
+            </div>
+            <div class="copyright">
+                <p>Created by Abigail Unwin for Udacity © 2022</p>
+            </div>
+            <div class="subscribe-footer-container">
+                <p>Stay in the know.</p>
+                <div id="subscribe" class="subscribe-footer">
+                    <input type="text" class="email-term" placeholder="Enter your email address">
+                    <button type="submit" class="subscribe-button">SUBSCRIBE</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
