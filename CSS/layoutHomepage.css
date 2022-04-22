@@ -14,7 +14,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    max-width: 100vw;
     border-bottom: 1px solid #bfbfbf;
 }
 
@@ -128,7 +128,7 @@
 }
 
 /*Media Queries max width 992px */
-@media only screen and (max-width: 992px) {
+@media only screen and (min-width: 700px) and (max-width: 1180px) {
     /*Body */
     .body-container {
         display: grid;
@@ -136,17 +136,29 @@
         grid-template-rows: 0.5fr 2fr 3.5fr 0.5fr;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
+        max-width: 90vw;
     }
 
     /*Nav Bar */
-    .nav-container { grid-area: 1 / 1 / 2 / 2; }
+    .nav-container { 
+        grid-area: 1 / 1 / 2 / 2; 
+        display: flex;
+        justify-content: space-evenly;
+        align-content: center;
+    }
 
     .blog-title {
         display: none;
     }
 
     /*Main Blog Post Featured on Homepage */
-    .featured { grid-area: 2 / 1 / 3 / 2; }
+    .featured { 
+        grid-area: 2 / 1 / 3 / 2; 
+        height: fit-content;
+        text-align: center;
+        margin: 2%;
+    }
+
 
     .feature-image {
         max-width: 80vw;
@@ -155,10 +167,16 @@
     /*Spotlight Section with other articles*/
     .spotlight { 
         grid-area: 3 / 1 / 4 / 2; 
+        margin: 2%;
     }
 
     .spotlight-heading {
         padding-bottom: 5%;
+    }
+
+    .spotlight {
+        border-left: 0;
+        padding: 0;
     }
 
     .blog-img {
@@ -166,22 +184,26 @@
     }
 
     /*Footer */
-    .footer-container { grid-area: 4 / 1 / 5 / 2; }
+    .footer-container { 
+        grid-area: 4 / 1 / 5 / 2; 
+    }
 }
 
 /*Media Queries Max width 800px */ 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
     .body-container {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 0.5fr 2fr 3.5fr 0.5fr;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
+        width: 100vw;
     }
 
     /* Nav Bar */
     .nav-container { 
         grid-area: 1 / 1 / 2 / 2; 
+        display: flex;
         justify-content: space-evenly;
         align-content: center;
     }
@@ -196,15 +218,20 @@
         grid-area: 2 / 1 / 3 / 2; 
         height: fit-content;
         text-align: center;
-        margin: 1em;
+        margin: 0;
     }
+
 
     .feature-image {
         max-width: 80vw;
     }
 
     /* Spotlight on Homepage */
-    .spotlight { grid-area: 3 / 1 / 4 / 2; }
+    .spotlight { 
+        grid-area: 3 / 1 / 4 / 2; 
+        border-left: 0;
+        padding: 0;
+    }
 
     .blog-card {
         flex-wrap: wrap;
@@ -239,7 +266,7 @@
     .subscribe-footer-container
     .subscribe-footer {
         margin: 0;
-        width: 100%;
+        width: 100vw;
         text-align: center;
     }
 }
