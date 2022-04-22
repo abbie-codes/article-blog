@@ -22,11 +22,11 @@
 }
 
 @media only screen and (max-width: 800px) {
-  .searchTerm {
+  .search-term {
     display: none;
   }
 
-  .searchButton {
+  .search-button {
     width: 100%;
     border-radius: 5px;
   }
