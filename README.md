@@ -1,3 +1,4 @@
+![article-blog](https://user-images.githubusercontent.com/100278218/174496014-4bd0322a-29ad-4d22-997e-deb8a9e77cbb.jpg)
 # article-blog
 A blog website created for Udacity to showcase HTML and CSS. 
 
